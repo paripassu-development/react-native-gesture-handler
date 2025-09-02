@@ -30,12 +30,12 @@ jobs:
 
       - name: Install dependeces
         run: yarn install
-        working-directory: packages\react-native-gesture-handler\
+        working-directory: packages/react-native-gesture-handler/
         env:
           NODE_AUTH_TOKEN: ${{ secrets.API_CLASSIC_TOKEN_GITHUB }}
       
       - name: Publish
         run: npm publish
-        working-directory: packages\react-native-gesture-handler\
+        working-directory: packages/react-native-gesture-handler/
         env:
           NODE_AUTH_TOKEN: ${{ secrets.API_CLASSIC_TOKEN_GITHUB }}
