@@ -1,0 +1,41 @@
+name: Publish package
+
+on:
+  push:
+    branches: 
+      - develop
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+        
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 8
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@paripassu-development'
+      
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      - name: Install dependeces
+        run: yarn install --frozen-lockfile
+        working-directory: packages\react-native-gesture-handler\
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.API_CLASSIC_TOKEN_GITHUB }}
+      
+      - name: Publish
+        run: npm publish
+        working-directory: packages\react-native-gesture-handler\
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.API_CLASSIC_TOKEN_GITHUB }}
