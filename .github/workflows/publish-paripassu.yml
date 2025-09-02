@@ -29,8 +29,13 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
 
       - name: Install dependeces
-        run: yarn install
-        working-directory: packages/react-native-gesture-handler/
+        run: yarn install --immutable
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.API_CLASSIC_TOKEN_GITHUB }}
+        
+      - name: Build package
+        run: yarn build
+        working-directory: packages/react-native-gesture-handler
         env:
           NODE_AUTH_TOKEN: ${{ secrets.API_CLASSIC_TOKEN_GITHUB }}
       
