@@ -2895,6 +2895,70 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@paripassu-development/react-native-gesture-handler-monorepo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@paripassu-development/react-native-gesture-handler-monorepo@workspace:."
+  dependencies:
+    "@types/react": "npm:^19.0.12"
+    "@typescript-eslint/eslint-plugin": "npm:^6.9.0"
+    "@typescript-eslint/parser": "npm:^6.9.0"
+    eslint: "npm:^8.57.0"
+    eslint-config-satya164: "npm:3.3.0"
+    eslint-import-resolver-babel-module: "npm:^5.2.0"
+    eslint-plugin-jest: "npm:27.4.3"
+    eslint-plugin-prettier: "npm:^5.0.1"
+    eslint-plugin-react: "npm:^7.37.5"
+    husky: "npm:^8.0.1"
+    lint-staged: "npm:^12.3.2"
+    prettier: "npm:3.3.3"
+    typescript: "npm:~5.8.3"
+  languageName: unknown
+  linkType: soft
+
+"@paripassu-development/react-native-gesture-handler@workspace:*, @paripassu-development/react-native-gesture-handler@workspace:packages/react-native-gesture-handler":
+  version: 0.0.0-use.local
+  resolution: "@paripassu-development/react-native-gesture-handler@workspace:packages/react-native-gesture-handler"
+  dependencies:
+    "@babel/core": "npm:^7.25.2"
+    "@babel/preset-env": "npm:^7.25.3"
+    "@babel/preset-typescript": "npm:^7.12.7"
+    "@egjs/hammerjs": "npm:^2.0.17"
+    "@react-native/babel-preset": "npm:0.81.0"
+    "@testing-library/react-native": "npm:^12.5.1"
+    "@types/hoist-non-react-statics": "npm:^3.3.1"
+    "@types/invariant": "npm:^2.2.37"
+    "@types/jest": "npm:^27.0.3"
+    "@types/react": "npm:^19.1.0"
+    "@types/react-test-renderer": "npm:^19.1.0"
+    "@typescript-eslint/eslint-plugin": "npm:^6.9.0"
+    "@typescript-eslint/parser": "npm:^6.9.0"
+    babel-plugin-module-resolver: "npm:^5.0.2"
+    clang-format: "npm:^1.8.0"
+    eslint: "npm:^8.57.0"
+    eslint-config-satya164: "npm:3.3.0"
+    eslint-import-resolver-babel-module: "npm:^5.2.0"
+    eslint-plugin-jest: "npm:27.4.3"
+    eslint-plugin-prettier: "npm:^5.0.1"
+    eslint-plugin-react: "npm:^7.37.5"
+    hoist-non-react-statics: "npm:^3.3.0"
+    husky: "npm:^8.0.1"
+    invariant: "npm:^2.2.4"
+    jest: "npm:^28.1.0"
+    lint-staged: "npm:^12.3.2"
+    madge: "npm:^6.1.0"
+    prettier: "npm:3.3.3"
+    react: "npm:19.1.0"
+    react-native: "npm:0.81.0"
+    react-native-builder-bob: "npm:^0.39.0"
+    react-native-reanimated: "npm:^3.18.0"
+    react-test-renderer: "npm:19.1.0"
+    typescript: "npm:~5.8.3"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  languageName: unknown
+  linkType: soft
+
 "@pkgjs/parseargs@npm:^0.11.0":
   version: 0.11.0
   resolution: "@pkgjs/parseargs@npm:0.11.0"
@@ -5896,6 +5960,7 @@ __metadata:
     "@babel/core": "npm:^7.25.2"
     "@babel/preset-env": "npm:^7.25.3"
     "@babel/runtime": "npm:^7.25.0"
+    "@paripassu-development/react-native-gesture-handler": "workspace:*"
     "@react-native-community/cli": "npm:20.0.0"
     "@react-native-community/cli-platform-android": "npm:20.0.0"
     "@react-native-community/cli-platform-ios": "npm:20.0.0"
@@ -5918,7 +5983,6 @@ __metadata:
     prettier: "npm:3.3.3"
     react: "npm:19.1.0"
     react-native: "npm:0.81.0"
-    react-native-gesture-handler: "workspace:*"
     react-test-renderer: "npm:19.1.0"
     typescript: "npm:~5.8.3"
   languageName: unknown
@@ -6512,6 +6576,7 @@ __metadata:
     "@babel/core": "npm:^7.25.2"
     "@babel/preset-env": "npm:^7.25.3"
     "@babel/runtime": "npm:^7.25.0"
+    "@paripassu-development/react-native-gesture-handler": "workspace:*"
     "@react-native-async-storage/async-storage": "npm:^2.1.2"
     "@react-native-community/cli": "npm:18.0.0"
     "@react-native-community/cli-platform-android": "npm:18.0.0"
@@ -6540,7 +6605,6 @@ __metadata:
     expo-camera: "npm:~16.1.1"
     jest: "npm:^29.6.3"
     prettier: "npm:3.3.3"
-    react-native-gesture-handler: "workspace:*"
     react-native-reanimated: "npm:^3.18.0"
     react-native-safe-area-context: "npm:^5.4.0"
     react-native-screens: "npm:^4.10.0"
@@ -8388,6 +8452,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.25.2"
     "@expo/metro-runtime": "npm:~6.0.2"
+    "@paripassu-development/react-native-gesture-handler": "workspace:*"
     "@react-native-async-storage/async-storage": "npm:2.2.0"
     "@react-native-community/slider": "patch:@react-native-community/slider@npm%3A4.5.7#~/.yarn/patches/@react-native-community-slider-npm-4.5.7-658e0e58c9.patch"
     "@react-native-community/viewpager": "npm:5.0.11"
@@ -8405,7 +8470,6 @@ __metadata:
     react: "npm:19.1.0"
     react-dom: "npm:19.1.0"
     react-native: "npm:0.81.0"
-    react-native-gesture-handler: "workspace:*"
     react-native-reanimated: "npm:^3.19.1"
     react-native-safe-area-context: "npm:~5.6.0"
     react-native-screens: "npm:~4.14.0"
@@ -11603,6 +11667,7 @@ __metadata:
     "@babel/core": "npm:^7.25.2"
     "@babel/preset-env": "npm:^7.25.3"
     "@babel/runtime": "npm:^7.25.0"
+    "@paripassu-development/react-native-gesture-handler": "workspace:*"
     "@react-native-async-storage/async-storage": "npm:2.1.2"
     "@react-native-community/cli": "npm:15.0.1"
     "@react-native-community/cli-platform-android": "npm:15.0.1"
@@ -11624,7 +11689,6 @@ __metadata:
     jest: "npm:^29.6.3"
     react: "npm:19.0.0"
     react-native: "npm:0.78.0"
-    react-native-gesture-handler: "workspace:*"
     react-native-macos: "npm:0.78.4"
     react-native-reanimated: "npm:^3.18.0"
     react-native-safe-area-context: "npm:5.4.0"
@@ -14174,70 +14238,6 @@ __metadata:
   checksum: 10c0/456900292bcbf035940ef253ea5ed80b224755bacca020b532ec7e568dc44e2c5c7bd53ba04d51beca214343888b21121651e525f9206b60e8f4a5052f13f83e
   languageName: node
   linkType: hard
-
-"react-native-gesture-handler-monorepo@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "react-native-gesture-handler-monorepo@workspace:."
-  dependencies:
-    "@types/react": "npm:^19.0.12"
-    "@typescript-eslint/eslint-plugin": "npm:^6.9.0"
-    "@typescript-eslint/parser": "npm:^6.9.0"
-    eslint: "npm:^8.57.0"
-    eslint-config-satya164: "npm:3.3.0"
-    eslint-import-resolver-babel-module: "npm:^5.2.0"
-    eslint-plugin-jest: "npm:27.4.3"
-    eslint-plugin-prettier: "npm:^5.0.1"
-    eslint-plugin-react: "npm:^7.37.5"
-    husky: "npm:^8.0.1"
-    lint-staged: "npm:^12.3.2"
-    prettier: "npm:3.3.3"
-    typescript: "npm:~5.8.3"
-  languageName: unknown
-  linkType: soft
-
-"react-native-gesture-handler@workspace:*, react-native-gesture-handler@workspace:packages/react-native-gesture-handler":
-  version: 0.0.0-use.local
-  resolution: "react-native-gesture-handler@workspace:packages/react-native-gesture-handler"
-  dependencies:
-    "@babel/core": "npm:^7.25.2"
-    "@babel/preset-env": "npm:^7.25.3"
-    "@babel/preset-typescript": "npm:^7.12.7"
-    "@egjs/hammerjs": "npm:^2.0.17"
-    "@react-native/babel-preset": "npm:0.81.0"
-    "@testing-library/react-native": "npm:^12.5.1"
-    "@types/hoist-non-react-statics": "npm:^3.3.1"
-    "@types/invariant": "npm:^2.2.37"
-    "@types/jest": "npm:^27.0.3"
-    "@types/react": "npm:^19.1.0"
-    "@types/react-test-renderer": "npm:^19.1.0"
-    "@typescript-eslint/eslint-plugin": "npm:^6.9.0"
-    "@typescript-eslint/parser": "npm:^6.9.0"
-    babel-plugin-module-resolver: "npm:^5.0.2"
-    clang-format: "npm:^1.8.0"
-    eslint: "npm:^8.57.0"
-    eslint-config-satya164: "npm:3.3.0"
-    eslint-import-resolver-babel-module: "npm:^5.2.0"
-    eslint-plugin-jest: "npm:27.4.3"
-    eslint-plugin-prettier: "npm:^5.0.1"
-    eslint-plugin-react: "npm:^7.37.5"
-    hoist-non-react-statics: "npm:^3.3.0"
-    husky: "npm:^8.0.1"
-    invariant: "npm:^2.2.4"
-    jest: "npm:^28.1.0"
-    lint-staged: "npm:^12.3.2"
-    madge: "npm:^6.1.0"
-    prettier: "npm:3.3.3"
-    react: "npm:19.1.0"
-    react-native: "npm:0.81.0"
-    react-native-builder-bob: "npm:^0.39.0"
-    react-native-reanimated: "npm:^3.18.0"
-    react-test-renderer: "npm:19.1.0"
-    typescript: "npm:~5.8.3"
-  peerDependencies:
-    react: "*"
-    react-native: "*"
-  languageName: unknown
-  linkType: soft
 
 "react-native-is-edge-to-edge@npm:1.1.7":
   version: 1.1.7

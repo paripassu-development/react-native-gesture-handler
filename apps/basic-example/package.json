@@ -17,9 +17,9 @@
     "pods": "cd ios && bundle install && bundle exec pod install"
   },
   "dependencies": {
+    "@paripassu-development/react-native-gesture-handler": "workspace:*",
     "react": "19.1.0",
-    "react-native": "0.81.0",
-    "react-native-gesture-handler": "workspace:*"
+    "react-native": "0.81.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

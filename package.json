@@ -1,5 +1,5 @@
 {
-  "name": "react-native-gesture-handler-monorepo",
+  "name": "@paripassu-development/react-native-gesture-handler-monorepo",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
