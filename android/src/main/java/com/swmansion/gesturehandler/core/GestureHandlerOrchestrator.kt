@@ -166,7 +166,7 @@ class GestureHandlerOrchestrator(
     }
 
     // Clear all awaiting handlers waiting for the current handler to fail
-    for (otherHandler in awaitingHandlers.asReversed()) {
+    for (otherHandler in awaitingHandlers.asReversed().toList()) {
       if (shouldHandlerBeCancelledBy(otherHandler, handler)) {
         otherHandler.cancel()
         otherHandler.isAwaiting = false
@@ -211,7 +211,7 @@ class GestureHandlerOrchestrator(
     preparedHandlers.clear()
     preparedHandlers.addAll(gestureHandlers)
 
-    for (handler in gestureHandlers.asReversed()) {
+    for (handler in gestureHandlers.asReversed().toList()) {
       handler.cancel()
     }
   }
